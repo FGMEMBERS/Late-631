@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>late631.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Late-631/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+  <animation>
+    <object-name>fuselage</object-name>
+    <object-name>coque</object-name>
+    <object-name>ailes</object-name>
+    <object-name>derive</object-name>
+    <object-name>porteGE</object-name>
+    <object-name>porteGI</object-name>
+    <object-name>porteDI</object-name>
+    <object-name>porteDE</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
+    <object-name>directionG</object-name>
+    <object-name>directionD</object-name>
+    <object-name>capotGE</object-name>
+    <object-name>capotGC</object-name>
+    <object-name>capotGI</object-name>
+    <object-name>capotDI</object-name>
+    <object-name>capotDC</object-name>
+    <object-name>capotDE</object-name>
+    <object-name>trous</object-name>
+
+    <object-name>flotteurG</object-name>
+    <object-name>axeGA</object-name>
+    <object-name>axeGB</object-name>
+
+    <object-name>flotteurD</object-name>
+    <object-name>axeDA</object-name>
+    <object-name>axeDB</object-name>
+
+    <!-- Transparence -->
+    <object-name>vitres</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>coque</object-name>
+    <object-name>ailes</object-name>
+    <object-name>derive</object-name>
+    <object-name>porteGE</object-name>
+    <object-name>porteGI</object-name>
+    <object-name>porteDI</object-name>
+    <object-name>porteDE</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
+    <object-name>directionG</object-name>
+    <object-name>directionD</object-name>
+    <object-name>capotGE</object-name>
+    <object-name>capotGC</object-name>
+    <object-name>capotGI</object-name>
+    <object-name>capotDI</object-name>
+    <object-name>capotDC</object-name>
+    <object-name>capotDE</object-name>
+    <object-name>trous</object-name>
+
+    <object-name>flotteurG</object-name>
+    <object-name>axeGA</object-name>
+    <object-name>axeGB</object-name>
+
+    <object-name>flotteurD</object-name>
+    <object-name>axeDA</object-name>
+    <object-name>axeDB</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>coque</object-name>
+    <object-name>ailes</object-name>
+    <object-name>derive</object-name>
+    <object-name>porteGE</object-name>
+    <object-name>porteGI</object-name>
+    <object-name>porteDI</object-name>
+    <object-name>porteDE</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>profondeurG</object-name>
+    <object-name>profondeurD</object-name>
+    <object-name>directionG</object-name>
+    <object-name>directionD</object-name>
+    <object-name>capotGE</object-name>
+    <object-name>capotGC</object-name>
+    <object-name>capotGI</object-name>
+    <object-name>capotDI</object-name>
+    <object-name>capotDC</object-name>
+    <object-name>capotDE</object-name>
+
+    <object-name>flotteurG</object-name>
+    <object-name>axeGA</object-name>
+    <object-name>axeGB</object-name>
+
+    <object-name>flotteurD</object-name>
+    <object-name>axeDA</object-name>
+    <object-name>axeDB</object-name>
+  </effect>
+
+  <animation>
+    <type>shader</type>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <texture>glass_shader.png</texture>
+    <object-name>vitres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+  </animation>
+
+  <!-- Interieur -->
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Trainée Centrale -->
+  <model>
+    <path>Aircraft/Late-631/Models/Effects/wake.xml</path>
+    <offsets>
+      <x-m>  6.023 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -4.454 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -45 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Trainée flotteur gauche -->
+  <model>
+    <path>Aircraft/Late-631/Models/Effects/wakeG.xml</path>
+    <offsets>
+      <x-m>  -2.253 </x-m>
+      <y-m> -12.730 </y-m>
+      <z-m>   3.836 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -45 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Trainée flotteur droit -->
+  <model>
+    <path>Aircraft/Late-631/Models/Effects/wakeD.xml</path>
+    <offsets>
+      <x-m>  -2.253 </x-m>
+      <y-m>  12.730 </y-m>
+      <z-m>   3.836 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -45 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur extérieur gauche -->
+  <model>
+    <path>Aircraft/Late-631/Models/Engines/engine0.xml</path>
+    <offsets>
+      <x-m>  -9.207 </x-m>
+      <y-m> -12.730 </y-m>
+      <z-m>   0.482 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur centrale gauche -->
+  <model>
+    <path>Aircraft/Late-631/Models/Engines/engine1.xml</path>
+    <offsets>
+      <x-m> -9.603 </x-m>
+      <y-m> -8.313 </y-m>
+      <z-m>  0.351 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur intérieur gauche -->
+  <model>
+    <path>Aircraft/Late-631/Models/Engines/engine2.xml</path>
+    <offsets>
+      <x-m> -9.936 </x-m>
+      <y-m> -3.962 </y-m>
+      <z-m>  0.025 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur intérieur droite -->
+  <model>
+    <path>Aircraft/Late-631/Models/Engines/engine3.xml</path>
+    <offsets>
+      <x-m> -9.936 </x-m>
+      <y-m>  3.962 </y-m>
+      <z-m>  0.025 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur centrale droit -->
+  <model>
+    <path>Aircraft/Late-631/Models/Engines/engine4.xml</path>
+    <offsets>
+      <x-m> -9.603 </x-m>
+      <y-m>  8.313 </y-m>
+      <z-m>  0.351 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Moteur extérieur droit -->
+  <model>
+    <path>Aircraft/Late-631/Models/Engines/engine5.xml</path>
+    <offsets>
+      <x-m>  -9.207 </x-m>
+      <y-m>  12.730 </y-m>
+      <z-m>   0.482 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Animations des ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronG</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>15.0</factor>
+    <axis>
+      <x1-m>  -2.755 </x1-m>
+      <y1-m> -25.455 </y1-m>
+      <z1-m>   1.719 </z1-m>
+      <x2-m>  -1.631 </x2-m>
+      <y2-m> -13.630 </y2-m>
+      <z2-m>   0.655 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronD</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>15.0</factor>
+    <axis>
+      <x1-m>  -1.631 </x1-m>
+      <y1-m>  13.630 </y1-m>
+      <z1-m>   0.655 </z1-m>
+      <x2-m>  -2.755 </x2-m>
+      <y2-m>  25.455 </y2-m>
+      <z2-m>   1.719 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Animations des volets -->
+  <animation>
+    <type>rotate</type>
+    <object-name>voletG</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 40.0 </factor>
+    <axis>
+      <x1-m>  -1.305 </x1-m>
+      <y1-m> -13.651 </y1-m>
+      <z1-m>   0.491 </z1-m>
+      <x2-m>   0.123 </x2-m>
+      <y2-m>  -1.820 </y2-m>
+      <z2-m>  -0.637 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>voletD</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 40.0 </factor>
+    <axis>
+      <x1-m>   0.123 </x1-m>
+      <y1-m>   1.820 </y1-m>
+      <z1-m>  -0.637 </z1-m>
+      <x2-m>  -1.305 </x2-m>
+      <y2-m>  13.651 </y2-m>
+      <z2-m>   0.491 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de profondeur -->
+  <animation>
+    <type>rotate</type>
+    <object-name>profondeurG</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 25 </factor>
+    <axis>
+      <x1-m> 19.150 </x1-m>
+      <y1-m> -6.417 </y1-m>
+      <z1-m>  1.554 </z1-m>
+      <x2-m> 19.150 </x2-m>
+      <y2-m> -0.813 </y2-m>
+      <z2-m>  0.099 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>profondeurD</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 25 </factor>
+    <axis>
+      <x1-m> 19.150 </x1-m>
+      <y1-m>  0.813 </y1-m>
+      <z1-m>  0.099 </z1-m>
+      <x2-m> 19.150 </x2-m>
+      <y2-m>  6.417 </y2-m>
+      <z2-m>  1.554 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Gouverne de direction -->
+  <animation>
+    <type>rotate</type>
+    <object-name>directionG</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 25 </factor>
+    <center>
+      <x-m> 19.158 </x-m>
+      <y-m> -6.849 </y-m>
+      <z-m>  3.350 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>directionD</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 25 </factor>
+    <center>
+      <x-m> 19.158 </x-m>
+      <y-m>  6.849 </y-m>
+      <z-m>  3.350 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+  
+  <!-- portes des flotteurs -->
+  <animation>
+    <type>rotate</type>
+    <object-name>porteGE</object-name>
+    <property>gear/gear[3]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> -60 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -60 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>  -4.886 </x1-m>
+      <y1-m> -13.447 </y1-m>
+      <z1-m>  -0.111 </z1-m>
+      <x2-m>  -3.272 </x2-m>
+      <y2-m> -13.412 </y2-m>
+      <z2-m>  -0.211 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porteGI</object-name>
+    <property>gear/gear[3]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0 </dep></entry>
+      <entry><ind>0.2 </ind><dep> 60 </dep></entry>
+      <entry><ind>1.0 </ind><dep> 60 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>  -4.886 </x1-m>
+      <y1-m> -12.013 </y1-m>
+      <z1-m>  -0.111 </z1-m>
+      <x2-m>  -3.272 </x2-m>
+      <y2-m> -12.048 </y2-m>
+      <z2-m>  -0.211 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porteDI</object-name>
+    <property>gear/gear[4]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> -60 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -60 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -4.886 </x1-m>
+      <y1-m> 12.013 </y1-m>
+      <z1-m> -0.111 </z1-m>
+      <x2-m> -3.272 </x2-m>
+      <y2-m> 12.048 </y2-m>
+      <z2-m> -0.211 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porteDE</object-name>
+    <property>gear/gear[4]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep> 0 </dep></entry>
+      <entry><ind> .2 </ind><dep> 60 </dep></entry>
+      <entry><ind>1.0 </ind><dep> 60 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -4.886 </x1-m>
+      <y1-m> 13.447 </y1-m>
+      <z1-m> -0.111 </z1-m>
+      <x2-m> -3.272 </x2-m>
+      <y2-m> 13.412 </y2-m>
+      <z2-m> -0.211 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Rentrée des flotteurs -->
+  <animation>
+    <name>FlotteurGauche</name>
+    <object-name>axeGA</object-name>
+    <object-name>flotteurG</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>flotteurG</object-name>
+    <property>gear/gear[3]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -69 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  -4.248 </x-m>
+      <y-m> -12.730 </y-m>
+      <z-m>  -0.120 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>FlotteurGauche</object-name>
+    <property>gear/gear[3]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 75 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  -6.195 </x-m>
+      <y-m> -12.730 </y-m>
+      <z-m>   0.589 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>axeGB</object-name>
+    <property>gear/gear[3]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 75 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  -1.628 </x-m>
+      <y-m> -12.730 </y-m>
+      <z-m>   0.207 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>FlotteurDroit</name>
+    <object-name>axeDA</object-name>
+    <object-name>flotteurD</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>flotteurD</object-name>
+    <property>gear/gear[4]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -69 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  -4.248 </x-m>
+      <y-m> -12.730 </y-m>
+      <z-m>  -0.120 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>FlotteurDroit</object-name>
+    <property>gear/gear[4]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 75 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -6.195 </x-m>
+      <y-m> 12.730 </y-m>
+      <z-m>  0.589 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>axeDB</object-name>
+    <property>gear/gear[4]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 75 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -1.628 </x-m>
+      <y-m> 12.730 </y-m>
+      <z-m>  0.207 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

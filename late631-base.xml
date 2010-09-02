@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+************************************************************************
+
+************************************************************************
+-->
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+   
+    <fuel-fraction>1.0</fuel-fraction>
+  
+    <type type="string">seaplane</type>
+  
+    <startup>
+      <splash-texture>Aircraft/Late-631/late631-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/Late-631/Sounds/late631-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/Late-631/Models/late631.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model> 
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Latecoere 631</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close crew door</desc>
+      </key>
+      <key>
+        <name>D</name>
+        <desc>Open/Close door</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/late631-menu.xml"/>
+
+    <systems>
+      <electrical>
+        <path></path>
+      </electrical>
+    </systems>
+
+  </sim>
+
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos>3</magnetos>
+      </engine>
+      <engine n="1">
+        <magnetos>3</magnetos>
+      </engine>
+      <engine n="2">
+        <magnetos>3</magnetos>
+      </engine>
+      <engine n="3">
+        <magnetos>3</magnetos>
+      </engine>
+      <engine n="4">
+        <magnetos>3</magnetos>
+      </engine>
+      <engine n="5">
+        <magnetos>3</magnetos>
+      </engine>
+    </engines>
+  </controls>
+
+  <engines>
+    <engine>
+      <rpm type="double">700</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">700</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">700</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">700</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">700</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">700</rpm>
+    </engine>
+  </engines>
+  
+  <nasal>
+    <late631>
+      <file>Aircraft/Late-631/Nasal/liveries.nas</file>
+      <file>Aircraft/Late-631/Nasal/doors.nas</file>
+      <file>Aircraft/Late-631/Nasal/light.nas</file>
+    </late631>
+  </nasal>
+
+</PropertyList>
