@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -16,9 +16,9 @@
           <value>5</value>
         </greater-than>
         <or>
-          <property>/gear/gear[3]/wow</property>
-          <property>/gear/gear[4]/wow</property>
-          <property>/gear/gear[5]/wow</property>
+          <property>/gear/gear[0]/wow</property>
+          <property>/gear/gear[1]/wow</property>
+          <property>/gear/gear[2]/wow</property>
         </or>
       </and>
     </condition>

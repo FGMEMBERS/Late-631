@@ -7,9 +7,23 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Late-631/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
@@ -87,19 +101,6 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
@@ -111,11 +112,6 @@
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
@@ -167,52 +163,93 @@
   <!-- Interieur -->
   <model>
     <path>Aircraft/Late-631/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
   </model>
 
   <!-- Trainée Centrale -->
   <model>
-    <path>Aircraft/Late-631/Models/Effects/wake.xml</path>
+    <path>Aircraft/Late-631/Models/Effects/Wakes/wake.xml</path>
     <offsets>
       <x-m>  6.023 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -4.454 </z-m>
-      <roll-deg>    0 </roll-deg>
       <pitch-deg> -45 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <!-- Trainée flotteur gauche -->
   <model>
-    <path>Aircraft/Late-631/Models/Effects/wakeG.xml</path>
+    <path>Aircraft/Late-631/Models/Effects/Wakes/wakeG.xml</path>
     <offsets>
-      <x-m>  -2.253 </x-m>
+      <x-m>  -0.314 </x-m>
       <y-m> -12.730 </y-m>
-      <z-m>   3.836 </z-m>
-      <roll-deg>    0 </roll-deg>
+      <z-m>  -3.111 </z-m>
       <pitch-deg> -45 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
   <!-- Trainée flotteur droit -->
   <model>
-    <path>Aircraft/Late-631/Models/Effects/wakeD.xml</path>
+    <path>Aircraft/Late-631/Models/Effects/Wakes/wakeD.xml</path>
     <offsets>
-      <x-m>  -2.253 </x-m>
+      <x-m>  -0.314 </x-m>
       <y-m>  12.730 </y-m>
-      <z-m>   3.836 </z-m>
-      <roll-deg>    0 </roll-deg>
+      <z-m>  -3.111 </z-m>
       <pitch-deg> -45 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Cranking -->
+  <model>
+    <path>Aircraft/Late-631/Models/Effects/cranking/cranking0.xml</path>
+    <offsets>
+      <x-m>  -9.207 </x-m>
+      <y-m> -12.730 </y-m>
+      <z-m>   0.482 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Late-631/Models/Effects/cranking/cranking1.xml</path>
+    <offsets>
+      <x-m> -9.603 </x-m>
+      <y-m> -8.313 </y-m>
+      <z-m>  0.351 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Late-631/Models/Effects/cranking/cranking2.xml</path>
+    <offsets>
+      <x-m> -9.936 </x-m>
+      <y-m> -3.962 </y-m>
+      <z-m>  0.025 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Late-631/Models/Effects/cranking/cranking3.xml</path>
+    <offsets>
+      <x-m> -9.936 </x-m>
+      <y-m>  3.962 </y-m>
+      <z-m>  0.025 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Late-631/Models/Effects/cranking/cranking4.xml</path>
+    <offsets>
+      <x-m> -9.603 </x-m>
+      <y-m>  8.313 </y-m>
+      <z-m>  0.351 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Late-631/Models/Effects/cranking/cranking5.xml</path>
+    <offsets>
+      <x-m>  -9.207 </x-m>
+      <y-m>  12.730 </y-m>
+      <z-m>   0.482 </z-m>
     </offsets>
   </model>
 
@@ -223,9 +260,6 @@
       <x-m>  -9.207 </x-m>
       <y-m> -12.730 </y-m>
       <z-m>   0.482 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -236,9 +270,6 @@
       <x-m> -9.603 </x-m>
       <y-m> -8.313 </y-m>
       <z-m>  0.351 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -249,9 +280,6 @@
       <x-m> -9.936 </x-m>
       <y-m> -3.962 </y-m>
       <z-m>  0.025 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -262,9 +290,6 @@
       <x-m> -9.936 </x-m>
       <y-m>  3.962 </y-m>
       <z-m>  0.025 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -275,9 +300,6 @@
       <x-m> -9.603 </x-m>
       <y-m>  8.313 </y-m>
       <z-m>  0.351 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -288,11 +310,33 @@
       <x-m>  -9.207 </x-m>
       <y-m>  12.730 </y-m>
       <z-m>   0.482 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
+
+  <animation>
+    <type>material</type>
+    <object-name>capot</object-name>
+    <object-name>moteur</object-name>
+    <object-name>helice</object-name>
+    <object-name>bol</object-name>
+    <object-name>air</object-name>
+    <object-name>inttrous</object-name>
+
+    <property-base>sim/model/livery-engine</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>Engines/colors.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+  </animation>
 
   <!-- Animations des ailerons -->
   <animation>

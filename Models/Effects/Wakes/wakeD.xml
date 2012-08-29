@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -15,7 +15,7 @@
           <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
           <value>5</value>
         </greater-than>
-        <property>/gear/gear[7]/wow</property>
+        <property>/gear/gear[4]/wow</property>
       </and>
     </condition>
 

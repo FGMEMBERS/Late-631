@@ -3,11 +3,11 @@
 <PropertyList>
 
   <sim>
-
     <model>
+
       <livery>
-        <name type="string">Default</name>
-        <texture>texture.png</texture>
+        <name type="string">L-631</name>
+        <texture>Liveries/L-631.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
@@ -20,7 +20,7 @@
         </emission>
       </livery>
       <livery-engine>
-        <texture>Engines/colors.png</texture>
+        <texture>Liveries/L-631-Eng.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
@@ -32,8 +32,8 @@
           <blue>  0.2 </blue>
         </emission>
       </livery-engine>
-    </model>
 
+    </model>
   </sim>
 
 </PropertyList>
