@@ -153,6 +153,16 @@
     <object-name>vitres</object-name>
   </effect>
   
+  <!-- Shadow -->
+  <model>
+    <path>Aircraft/Late-631/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.0 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -3.8 </z-m>
+    </offsets>
+  </model>
+  
   <!-- Interieur -->
   <model>
     <path>Aircraft/Late-631/Models/Interior/interior.xml</path>
