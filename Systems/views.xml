@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <chase-distance-m type="double" archive="y"> -80 </chase-distance-m>
+  <chase-distance-m type="double" archive="y"> -70 </chase-distance-m>
 
   <view n="100">
     <name>Co pilote</name>
@@ -17,7 +17,7 @@
       <y-offset-m archive="y">  -0.558 </y-offset-m> <!-- Up    -->
       <z-offset-m archive="y"> -12.292 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg> -10 </pitch-offset-deg>
-      <default-field-of-view-deg> 65 </default-field-of-view-deg>
+      <default-field-of-view-deg> 75 </default-field-of-view-deg>
     </config>
   </view>
 
@@ -44,7 +44,7 @@
       <y-offset-m archive="y">  -0.558 </y-offset-m> <!-- Up    -->
       <z-offset-m archive="y"> -12.292 </z-offset-m> <!-- Back  -->
       <pitch-offset-deg> -5 </pitch-offset-deg>
-      <default-field-of-view-deg> 65 </default-field-of-view-deg>
+      <default-field-of-view-deg> 75 </default-field-of-view-deg>
     </config>
   </view>
 

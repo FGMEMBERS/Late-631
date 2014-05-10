@@ -11,5 +11,209 @@
     <!-- Objets transparents -->
   </animation>
 
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.192 </x-m>
+      <y-m> -0.880 </y-m>
+      <z-m>  0.260 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.600 </y-m>
+      <z-m> 0.260 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.192 </x-m>
+      <y-m> -0.740 </y-m>
+      <z-m>  0.260 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.740 </y-m>
+      <z-m> 0.260 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- VSI-->
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.192 </x-m>
+      <y-m> -0.600 </y-m>
+      <z-m>  0.260 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.880 </y-m>
+      <z-m> 0.260 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ALT-->
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.192 </x-m>
+      <y-m> -0.880 </y-m>
+      <z-m>  0.130 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.600 </y-m>
+      <z-m> 0.130 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.192 </x-m>
+      <y-m> -0.600 </y-m>
+      <z-m>  0.130 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.880 </y-m>
+      <z-m> 0.130 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- MAN -->
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/man/man0.xml</path>
+    <offsets>
+      <x-m>  0.192 </x-m>
+      <y-m> -0.230 </y-m>
+      <z-m>  0.290 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/man/man1.xml</path>
+    <offsets>
+      <x-m>  0.192 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.290 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/man/man2.xml</path>
+    <offsets>
+      <x-m>  0.192 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m>  0.290 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/man/man3.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.050 </y-m>
+      <z-m> 0.290 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/man/man4.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.140 </y-m>
+      <z-m> 0.290 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/man/man5.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.230 </y-m>
+      <z-m> 0.290 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- MAN -->
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/rpm/rpm0.xml</path>
+    <offsets>
+      <x-m>  0.192 </x-m>
+      <y-m> -0.230 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/rpm/rpm1.xml</path>
+    <offsets>
+      <x-m>  0.192 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/rpm/rpm2.xml</path>
+    <offsets>
+      <x-m>  0.192 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m>  0.200 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/rpm/rpm3.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.050 </y-m>
+      <z-m> 0.200 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/rpm/rpm4.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.140 </y-m>
+      <z-m> 0.200 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Late-631/Models/Interior/Panel/Instruments/rpm/rpm5.xml</path>
+    <offsets>
+      <x-m> 0.192 </x-m>
+      <y-m> 0.230 </y-m>
+      <z-m> 0.200 </z-m>
+    </offsets>
+  </model>
+  
 </PropertyList>
-

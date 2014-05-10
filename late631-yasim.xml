@@ -14,7 +14,7 @@
      Cruise speed  : 297 km/h (    161 kt       )
 -->
 
-<airplane mass="137300">
+<airplane mass="137300" version="YASIM_VERSION_CURRENT">
 
   <approach speed="80" aoa="4" fuel="0.3">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.4"/>
@@ -346,7 +346,9 @@
         speed-planing="15"
         spring-factor-not-planing="0.7">
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        
         <control-output control="EXTEND" prop="/gear/gear[3]/position-norm"/>
+        
         <control-speed control="EXTEND" transition-time="7"/>
   </gear>
 
@@ -364,7 +366,9 @@
         speed-planing="15"
         spring-factor-not-planing="0.7">
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+        
         <control-output control="EXTEND" prop="/gear/gear[4]/position-norm"/>
+        
         <control-speed control="EXTEND" transition-time="7"/>
   </gear>
 
@@ -375,4 +379,3 @@
   <ballast x="8.2" y="0.0" z="-0.742" mass="8000"/>
 
 </airplane>
-

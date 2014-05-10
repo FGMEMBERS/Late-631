@@ -2,13 +2,14 @@
 
 <PropertyList>
 
-  <sim include="Nasal/views.xml">
+  <sim include="Systems/views.xml">
 
+    <description>Latecoere 631 (YASim)</description>
     <author>BARANGER Emmanuel (3D/FDM)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
    
-    <fuel-fraction>1.0</fuel-fraction>
+    <fuel-fraction>1</fuel-fraction>
   
     <type type="string">seaplane</type>
   
@@ -30,47 +31,48 @@
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
-        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
-        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
-        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
-        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
-        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
-        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
-        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
-        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
-        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
-        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
-        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
-        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
-        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
-        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
-        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
+        <int n="0"   type="int">  0 </int>                                          <!--  0 immat -->
+        <int n="1"   type="int">  0 </int>                                          <!--  1 immat -->
+        <int n="2"   type="int">  0 </int>                                          <!--  2 immat -->
+        <int n="3"   type="int">  0 </int>                                          <!--  3 immat -->
+        <int n="4"   type="int">  0 </int>                                          <!--  4 immat -->
+        <int n="5"   type="int">  0 </int>                                          <!--  5 immat -->
+        <int n="6"   type="bool"> 1 </int>                                          <!--  6 smoke/bomb/torpedo -->
+        <int n="7"   type="int">  0 </int>                                          <!--  7 -->
+        <int n="8"   type="int">  0 </int>                                          <!--  8 nav-lights -->
+        <int n="9"   type="int" alias="/sim/model/lights/beacon/state">false</int>  <!--  9 strobe-lights -->
+        <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                       <!-- altitude for MP shadow -->
+        <float n="3" alias="/position/altitude-ft"> 0 </float>                      <!-- altitude for Smoke/Trail -->
+        <float n="4" alias="/engines/engine[0]/rpm"/>
+        <float n="5" alias="/engines/engine[1]/rpm"/>
+        <float n="6" alias="/engines/engine[2]/rpm"/>
+        <float n="7" alias="/engines/engine[3]/rpm"/>
+        <float n="8" alias="/engines/engine[4]/rpm"/>
+        <float n="9" alias="/engines/engine[5]/rpm"/>
+        <float n="10" alias="/engines/engine[0]/cranking"/>
+        <float n="11" alias="/engines/engine[1]/cranking"/>
+        <float n="12" alias="/engines/engine[2]/cranking"/>
+        <float n="13" alias="/engines/engine[3]/cranking"/>
+        <float n="14" alias="/engines/engine[4]/cranking"/>
+        <float n="15" alias="/engines/engine[5]/cranking"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
       </generic>
     </multiplay>
-
-    <help>
-      <title>Latecoere 631</title>
-      <key>
-        <name>d</name>
-        <desc>Open/Close crew door</desc>
-      </key>
-      <key>
-        <name>D</name>
-        <desc>Open/Close door</desc>
-      </key>
-    </help>
+    
+    <help include="Systems/help.xml"/>
 
     <menubar include="Dialogs/late631-menu.xml"/>
 
-    <systems>
-      <electrical>
-        <path></path>
-      </electrical>
-    </systems>
-
   </sim>
 
+  <input>
+    <keyboard include="Systems/late631-keyboard.xml"/>
+  </input>
+  
   <controls>
     <engines>
       <engine n="0">

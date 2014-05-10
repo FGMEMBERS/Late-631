@@ -13,9 +13,9 @@
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
       var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
       
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-    
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var wing_door = self.getNode("sim/model/door-positions/wing/position-norm", 1);
+      
       crew_door.alias(float_0);
       passenger_door.alias(float_1);
     </load>
@@ -106,12 +106,6 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
   <effect>
@@ -148,18 +142,17 @@
     <object-name>axeDB</object-name>
   </effect>
 
-  <animation>
-    <type>shader</type>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <texture>glass_shader.png</texture>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Late-631/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>vitres</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Interieur -->
   <model>
     <path>Aircraft/Late-631/Models/Interior/interior.xml</path>
@@ -321,7 +314,7 @@
     <object-name>bol</object-name>
     <object-name>air</object-name>
     <object-name>inttrous</object-name>
-
+    
     <property-base>sim/model/livery-engine</property-base>
     <texture-prop>texture</texture-prop>
     <texture>Engines/colors.png</texture>
@@ -330,14 +323,8 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
-
+  
   <!-- Animations des ailerons -->
   <animation>
     <type>rotate</type>
@@ -491,9 +478,9 @@
     <object-name>porteGI</object-name>
     <property>gear/gear[3]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> 0 </dep></entry>
-      <entry><ind>0.2 </ind><dep> 60 </dep></entry>
-      <entry><ind>1.0 </ind><dep> 60 </dep></entry>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> 60 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 60 </dep></entry>
     </interpolation>
     <axis>
       <x1-m>  -4.886 </x1-m>
@@ -529,9 +516,9 @@
     <object-name>porteDE</object-name>
     <property>gear/gear[4]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep> 0 </dep></entry>
-      <entry><ind> .2 </ind><dep> 60 </dep></entry>
-      <entry><ind>1.0 </ind><dep> 60 </dep></entry>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> 60 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 60 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -4.886 </x1-m>
