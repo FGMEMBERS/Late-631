@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="Systems/views.xml">
+
+    <description>Latecoere 631 (YASim)</description>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+   
+    <fuel-fraction>1</fuel-fraction>
+  
+    <type type="string">seaplane</type>
+  
+    <startup>
+      <splash-texture>Aircraft/Late-631/late631-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/Late-631/Sounds/late631-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/Late-631/Models/late631.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model> 
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int n="0"   type="int">  0 </int>                                          <!--  0 immat -->
+        <int n="1"   type="int">  0 </int>                                          <!--  1 immat -->
+        <int n="2"   type="int">  0 </int>                                          <!--  2 immat -->
+        <int n="3"   type="int">  0 </int>                                          <!--  3 immat -->
+        <int n="4"   type="int">  0 </int>                                          <!--  4 immat -->
+        <int n="5"   type="int">  0 </int>                                          <!--  5 immat -->
+        <int n="6"   type="bool"> 1 </int>                                          <!--  6 smoke/bomb/torpedo -->
+        <int n="7"   type="int">  0 </int>                                          <!--  7 -->
+        <int n="8"   type="int">  0 </int>                                          <!--  8 nav-lights -->
+        <int n="9"   type="int" alias="/sim/model/lights/beacon/state">false</int>  <!--  9 strobe-lights -->
+        <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                       <!-- altitude for MP shadow -->
+        <float n="3" alias="/position/altitude-ft"> 0 </float>                      <!-- altitude for Smoke/Trail -->
+        <float n="4" alias="/engines/engine[0]/rpm"/>
+        <float n="5" alias="/engines/engine[1]/rpm"/>
+        <float n="6" alias="/engines/engine[2]/rpm"/>
+        <float n="7" alias="/engines/engine[3]/rpm"/>
+        <float n="8" alias="/engines/engine[4]/rpm"/>
+        <float n="9" alias="/engines/engine[5]/rpm"/>
+        <float n="10" alias="/engines/engine[0]/cranking"/>
+        <float n="11" alias="/engines/engine[1]/cranking"/>
+        <float n="12" alias="/engines/engine[2]/cranking"/>
+        <float n="13" alias="/engines/engine[3]/cranking"/>
+        <float n="14" alias="/engines/engine[4]/cranking"/>
+        <float n="15" alias="/engines/engine[5]/cranking"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+    
+    <help include="Systems/help.xml"/>
+
+    <menubar include="Dialogs/late631-menu.xml"/>
+
+  </sim>
+
+  <input>
+    <keyboard include="Systems/late631-keyboard.xml"/>
+  </input>
+  
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="1">
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="2">
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="3">
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="4">
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="5">
+        <magnetos>0</magnetos>
+      </engine>
+    </engines>
+  </controls>
+
+  <engines>
+    <engine>
+      <rpm type="double">0</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">0</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">0</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">0</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">0</rpm>
+    </engine>
+    <engine>
+      <rpm type="double">0</rpm>
+    </engine>
+  </engines>
+  
+  <nasal>
+    <doors>
+      <file>Aircraft/Late-631/Nasal/doors.nas</file>
+    </doors>
+    <late631>
+      <file>Aircraft/Late-631/Nasal/liveries.nas</file>
+      <file>Aircraft/Late-631/Nasal/light.nas</file>
+    </late631>
+  </nasal>
+
+</PropertyList>
