@@ -10,7 +10,7 @@ data 7
 cloison
 texture "interior.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 73
 -13.332872 -0.749091 0.409726
 -13.335207 -0.739639 0.33353
@@ -418,7 +418,7 @@ data 8
 interior
 texture "interior.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 836
 -13.332872 -0.749091 0.409727
 -13.335207 -0.739639 0.33353
@@ -7081,7 +7081,7 @@ data 7
 inttour
 texture "interior.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 514
 2.186586 -2.395428 1.620055
 1.908072 -2.395427 1.629983
@@ -9410,7 +9410,7 @@ name "intvitres"
 loc 0 0 -0
 data 9
 intvitres
-crease 30.000001
+crease 180.000005
 numvert 254
 2.186586 -2.395428 1.620055
 1.908072 -2.395427 1.629983
@@ -10137,7 +10137,7 @@ data 8
 planchet
 texture "interior.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 96
 -13.335207 -1.492471 -0
 -11.177691 -1.492504 1.491858

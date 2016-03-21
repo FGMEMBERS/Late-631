@@ -10,7 +10,7 @@ data 7
 Needle1
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 16
 0.005158 0.039342 0.001081
 0.005158 0.041905 -0.00006
@@ -106,7 +106,7 @@ data 7
 Needle2
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 16
 0.006551 0.013787 -0.00247
 0.006551 0.02179 -0.000133
@@ -202,7 +202,7 @@ data 7
 Needle3
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 20
 0.003682 0.022286 0.000544
 0.003682 0.041905 -0.00006
@@ -323,7 +323,7 @@ data 12
 PressureDial
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 17
 0.001603 -0.0002 -0.041669
 0.001603 0.015731 -0.038498
@@ -447,7 +447,7 @@ data 4
 face
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 37
 0.002712 0.017454 -0.042664
 0.002712 0.032421 -0.032665
@@ -718,7 +718,7 @@ data 4
 fond
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 128
 0.000518 0.00873 0.043698
 0.000518 -0.000065 0.044558
@@ -1529,7 +1529,7 @@ data 4
 poly
 texture "alt.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 6
 0.002952 0.000718 -0.044212
 0.002952 -0.000168 -0.03788
@@ -1571,7 +1571,7 @@ name "vitre"
 loc 0.002303 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 33
 0.003724 -0.033976 0.033856
 0.003724 -0.026695 0.03981

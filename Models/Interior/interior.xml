@@ -17,7 +17,7 @@
 
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Late-631/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
   </effect>
   

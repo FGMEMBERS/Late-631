@@ -4,6 +4,11 @@
 
   <path>late631.ac</path>
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/Late-631/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Late-631/Models/Liveries", 10);
@@ -335,74 +340,12 @@
     </specular>
   </animation>
   
-  <!-- Animations des ailerons -->
-  <animation>
-    <type>rotate</type>
-    <object-name>aileronG</object-name>
-    <property>surface-positions/left-aileron-pos-norm</property>
-    <factor>15.0</factor>
-    <axis>
-      <x1-m>  -2.755 </x1-m>
-      <y1-m> -25.455 </y1-m>
-      <z1-m>   1.719 </z1-m>
-      <x2-m>  -1.631 </x2-m>
-      <y2-m> -13.630 </y2-m>
-      <z2-m>   0.655 </z2-m>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>aileronD</object-name>
-    <property>surface-positions/right-aileron-pos-norm</property>
-    <factor>15.0</factor>
-    <axis>
-      <x1-m>  -1.631 </x1-m>
-      <y1-m>  13.630 </y1-m>
-      <z1-m>   0.655 </z1-m>
-      <x2-m>  -2.755 </x2-m>
-      <y2-m>  25.455 </y2-m>
-      <z2-m>   1.719 </z2-m>
-    </axis>
-  </animation>
-
-  <!-- Animations des volets -->
-  <animation>
-    <type>rotate</type>
-    <object-name>voletG</object-name>
-    <property>surface-positions/flap-pos-norm</property>
-    <factor> 40.0 </factor>
-    <axis>
-      <x1-m>  -1.305 </x1-m>
-      <y1-m> -13.651 </y1-m>
-      <z1-m>   0.491 </z1-m>
-      <x2-m>   0.123 </x2-m>
-      <y2-m>  -1.820 </y2-m>
-      <z2-m>  -0.637 </z2-m>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>voletD</object-name>
-    <property>surface-positions/flap-pos-norm</property>
-    <factor> 40.0 </factor>
-    <axis>
-      <x1-m>   0.123 </x1-m>
-      <y1-m>   1.820 </y1-m>
-      <z1-m>  -0.637 </z1-m>
-      <x2-m>  -1.305 </x2-m>
-      <y2-m>  13.651 </y2-m>
-      <z2-m>   0.491 </z2-m>
-    </axis>
-  </animation>
-
   <!-- Gouverne de profondeur -->
   <animation>
     <type>rotate</type>
     <object-name>profondeurG</object-name>
     <property>surface-positions/elevator-pos-norm</property>
-    <factor> 25 </factor>
+    <factor> 15 </factor>
     <axis>
       <x1-m> 19.150 </x1-m>
       <y1-m> -6.417 </y1-m>
@@ -412,28 +355,13 @@
       <z2-m>  0.099 </z2-m>
     </axis>
   </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>profondeurD</object-name>
-    <property>surface-positions/elevator-pos-norm</property>
-    <factor> 25 </factor>
-    <axis>
-      <x1-m> 19.150 </x1-m>
-      <y1-m>  0.813 </y1-m>
-      <z1-m>  0.099 </z1-m>
-      <x2-m> 19.150 </x2-m>
-      <y2-m>  6.417 </y2-m>
-      <z2-m>  1.554 </z2-m>
-    </axis>
-  </animation>
-
+  
   <!-- Gouverne de direction -->
   <animation>
     <type>rotate</type>
     <object-name>directionG</object-name>
     <property>surface-positions/rudder-pos-norm</property>
-    <factor> 25 </factor>
+    <factor> 15 </factor>
     <center>
       <x-m> 19.158 </x-m>
       <y-m> -6.849 </y-m>
@@ -450,7 +378,7 @@
     <type>rotate</type>
     <object-name>directionD</object-name>
     <property>surface-positions/rudder-pos-norm</property>
-    <factor> 25 </factor>
+    <factor> 15 </factor>
     <center>
       <x-m> 19.158 </x-m>
       <y-m>  6.849 </y-m>
@@ -463,6 +391,83 @@
     </axis>
   </animation>
   
+  <animation>
+    <type>rotate</type>
+    <object-name>profondeurD</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 15 </factor>
+    <axis>
+      <x1-m> 19.150 </x1-m>
+      <y1-m>  0.813 </y1-m>
+      <z1-m>  0.099 </z1-m>
+      <x2-m> 19.150 </x2-m>
+      <y2-m>  6.417 </y2-m>
+      <z2-m>  1.554 </z2-m>
+    </axis>
+  </animation>
+  
+  <!-- Animations des ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronG</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis>
+      <x1-m>  -2.755 </x1-m>
+      <y1-m> -25.455 </y1-m>
+      <z1-m>   1.719 </z1-m>
+      <x2-m>  -1.631 </x2-m>
+      <y2-m> -13.630 </y2-m>
+      <z2-m>   0.655 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aileronD</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> 15 </factor>
+    <axis>
+      <x1-m> -1.631 </x1-m>
+      <y1-m> 13.630 </y1-m>
+      <z1-m>  0.655 </z1-m>
+      <x2-m> -2.755 </x2-m>
+      <y2-m> 25.455 </y2-m>
+      <z2-m>  1.719 </z2-m>
+    </axis>
+  </animation>
+
+  <!-- Animations des volets -->
+  <animation>
+    <type>rotate</type>
+    <object-name>voletG</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 40 </factor>
+    <axis>
+      <x1-m>  -1.305 </x1-m>
+      <y1-m> -13.651 </y1-m>
+      <z1-m>   0.491 </z1-m>
+      <x2-m>   0.123 </x2-m>
+      <y2-m>  -1.820 </y2-m>
+      <z2-m>  -0.637 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>voletD</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <factor> 40 </factor>
+    <axis>
+      <x1-m>  0.123 </x1-m>
+      <y1-m>  1.820 </y1-m>
+      <z1-m> -0.637 </z1-m>
+      <x2-m> -1.305 </x2-m>
+      <y2-m> 13.651 </y2-m>
+      <z2-m>  0.491 </z2-m>
+    </axis>
+  </animation>
+
   <!-- portes des flotteurs -->
   <animation>
     <type>rotate</type>

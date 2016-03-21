@@ -2,6 +2,7 @@
 
 <!-- Latecoere 631 : December 2008 BARANGER Emmanuel
            Updated : August 2012 BARANGER Emmanuel
+           Updated :  March 2016 BARANGER Emmanuel
 
            Sources : http://en.wikipedia.org/wiki/Lat%C3%A9co%C3%A8re_631
 
@@ -35,7 +36,6 @@
     <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="0.5"/>
     <control-setting axis="/controls/engines/engine[4]/propeller-pitch" value="0.5"/>
     <control-setting axis="/controls/engines/engine[5]/propeller-pitch" value="0.5"/>
-    <control-setting axis="/controls/flight/flaps" value="1"/>
     <control-setting axis="/controls/gear/gear-down" value="1"/>
   </approach>
 
@@ -58,7 +58,6 @@
     <control-setting axis="/controls/engines/engine[3]/propeller-pitch" value="1"/>
     <control-setting axis="/controls/engines/engine[4]/propeller-pitch" value="1"/>
     <control-setting axis="/controls/engines/engine[5]/propeller-pitch" value="1"/>
-    <control-setting axis="/controls/flight/flaps" value="0"/>
     <control-setting axis="/controls/gear/gear-down" value="0"/>
   </cruise>
 
@@ -74,12 +73,12 @@
         chord="9.387" 
         length="28.476" 
         taper="0.30" 
-        camber="0.1"
         sweep="-1" 
-        dihedral="5">
-        <stall aoa="18" width="6" peak="1.5"/>
+        dihedral="5"
+        camber="0.04">
+        <stall aoa="20" width="6" peak="1.5"/>
         <flap0 start="0.019" end="0.620" lift="1.4" drag="1.4"/>
-        <flap1 start="0.620" end="0.979" lift="1.4" drag="1.2"/>
+        <flap1 start="0.620" end="0.979" lift="1.3" drag="1.1"/>
 
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
@@ -97,8 +96,8 @@
          length="6.687" 
          taper="0.66"
          dihedral="15">
-         <stall aoa="16" width="3" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.8" drag="1.9"/>
+         <stall aoa="18" width="3" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.4" drag="1.0"/>
 
          <control-input axis="/controls/flight/elevator" control="FLAP0" />
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -110,8 +109,8 @@
          chord="3.442"
          length="3.308" 
          taper="0.66">
-         <stall aoa="14" width="3" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.5" drag="1.5"/>
+         <stall aoa="12" width="3" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.3" drag="1.1"/>
 
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
@@ -124,7 +123,7 @@
          length="3.308" 
          taper="0.66">
          <stall aoa="12" width="3" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.5" drag="1.5"/>
+         <flap0 start="0" end="1" lift="1.3" drag="1.1"/>
 
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>

@@ -5,7 +5,10 @@
   <sim>
 
     <description>Latecoere 631 (YASim)</description>
-    <author>BARANGER Emmanuel</author>
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>0.2</aircraft-version>
+    <status>Alpha</status>
+    
     <flight-model>yasim</flight-model>
     <aero>late631-yasim</aero>
     

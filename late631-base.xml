@@ -4,11 +4,6 @@
 
   <sim include="Systems/views.xml">
 
-    <description>Latecoere 631 (YASim)</description>
-    <author>BARANGER Emmanuel (3D/FDM)</author>
-    <aircraft-version>0.1</aircraft-version>
-    <status>Alpha</status>
-   
     <fuel-fraction>1</fuel-fraction>
   
     <type type="string">seaplane</type>
@@ -69,53 +64,11 @@
 
   </sim>
 
-  <input>
-    <keyboard include="Systems/late631-keyboard.xml"/>
-  </input>
+  <input include="Systems/late631-keyboard.xml"/>
   
-  <controls>
-    <engines>
-      <engine n="0">
-        <magnetos>0</magnetos>
-      </engine>
-      <engine n="1">
-        <magnetos>0</magnetos>
-      </engine>
-      <engine n="2">
-        <magnetos>0</magnetos>
-      </engine>
-      <engine n="3">
-        <magnetos>0</magnetos>
-      </engine>
-      <engine n="4">
-        <magnetos>0</magnetos>
-      </engine>
-      <engine n="5">
-        <magnetos>0</magnetos>
-      </engine>
-    </engines>
-  </controls>
+  <controls include="Systems/controls.xml"/>
 
-  <engines>
-    <engine>
-      <rpm type="double">0</rpm>
-    </engine>
-    <engine>
-      <rpm type="double">0</rpm>
-    </engine>
-    <engine>
-      <rpm type="double">0</rpm>
-    </engine>
-    <engine>
-      <rpm type="double">0</rpm>
-    </engine>
-    <engine>
-      <rpm type="double">0</rpm>
-    </engine>
-    <engine>
-      <rpm type="double">0</rpm>
-    </engine>
-  </engines>
+  <engines include="Systems/engines.xml"/>
   
   <nasal>
     <doors>
