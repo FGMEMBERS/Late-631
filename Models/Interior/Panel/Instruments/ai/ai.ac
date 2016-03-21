@@ -10,7 +10,7 @@ data 13
 aircraft-line
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 28
 0.003704 -0.000685 -0.029706
 0.003704 0.000685 -0.029706
@@ -187,7 +187,7 @@ data 4
 disk
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 52
 0.003895 -0.002599 -0.001076
 0.003895 -0.001843 -0.002177
@@ -523,7 +523,7 @@ data 4
 face
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 17
 -0.001348 -0.000314 -0.046418
 -0.001348 0.017439 -0.042887
@@ -647,7 +647,7 @@ data 4
 fond
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 128
 0.000518 0.00873 0.043698
 0.000518 -0.000065 0.044558
@@ -1458,7 +1458,7 @@ data 12
 horizon-line
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 8
 0.001648 -0.00137 -0.042187
 0.001648 -0.00137 0.042187
@@ -1510,7 +1510,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 33
 0.006615 0.039053 -0.026322
 0.006236 0.043363 -0.018261

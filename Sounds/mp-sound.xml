@@ -989,18 +989,6 @@
       </pitch>
     </wind>
     
-    <stall>
-      <name>stall</name>
-      <path>Aircraft/Late-631/Sounds/stall_horn.wav</path>
-      <property>/sim/alarms/stall-warning</property>
-      <volume>
-        <property>/velocities/airspeed-kt</property>
-        <min>30.0</min>
-      </volume>
-      <reference-dist>10.0</reference-dist>
-      <max-dist>20.0</max-dist>
-    </stall>
-    
   </fx>
   
 </PropertyList>

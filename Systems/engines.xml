@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <engine n="0">
+    <rpm type="double">0</rpm>
+  </engine>
+  <engine n="1">
+    <rpm type="double">0</rpm>
+  </engine>
+  <engine n="2">
+    <rpm type="double">0</rpm>
+  </engine>
+  <engine n="3">
+    <rpm type="double">0</rpm>
+  </engine>
+  <engine n="4">
+    <rpm type="double">0</rpm>
+  </engine>
+  <engine n="5">
+    <rpm type="double">0</rpm>
+  </engine>
+  
+</PropertyList>
